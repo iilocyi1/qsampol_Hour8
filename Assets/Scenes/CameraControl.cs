@@ -17,11 +17,9 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float camRotation = Input.GetAxis("Mouse Y") * rotateSpeed;
-        mainCamera.transform.Rotate(camRotation, 0f, 0f);
-
-        float camRotation = Input.GetAxis("Mouse X") * rotateSpeed;
-        mainCamera.transform.Rotate(of, camRotation, 0f);
-        
+        float ycamRotation = Input.GetAxis("Mouse X") * rotateSpeed;
+        float xcamRotation = -Input.GetAxis("Mouse Y") * rotateSpeed;
+        mainCamera.transform.Rotate(0f, ycamRotation, 0f);
+        mainCamera.transform.Rotate(xcamRotation, 0f, 0f);
     }
 }
