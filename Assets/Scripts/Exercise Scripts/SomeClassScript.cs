@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseMovement : MonoBehaviour
+public class SomeClassScript : MonoBehaviour
 {
-    public GameObject objectYouWant; 
+    public GameObject objectYouWant;
     // Start is called before the first frame update
     void Start()
     {

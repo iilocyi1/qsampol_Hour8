@@ -15,7 +15,9 @@ public class TargetCubeScript : MonoBehaviour
     void Update()
     {
         target.transform.Translate(.05f, 0f, 0f);
-        target.transform.Rotate(0f, 0f, 1f);
-        target.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        target.transform.Rotate(0f, 1f, 0f);
+        target.transform.localScale = new Vector3(2f, 2f, 2f);
+     
+     
     }
 }
